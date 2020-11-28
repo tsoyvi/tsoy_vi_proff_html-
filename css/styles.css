@@ -243,7 +243,7 @@ body {
 
 section {
     outline: none;
-    border-color: none;
+    border: none;
 }
 
 .new-section {
