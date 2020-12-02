@@ -41,6 +41,11 @@ body {
 .button:active {
     background-color: #f16d7f;
 } 
+
+.menu-link:hover {
+    color: #ccc;
+}
+
 /* **  ** */
 
 .header {
@@ -145,6 +150,7 @@ body {
     margin: 6px 0 7px 23px;
     padding: 13px 12px 11px 19px;
     background-color: #f16d7f;
+    border: none;
 }
 
 /*
@@ -264,9 +270,13 @@ section {
     height: 823px;
 }
 
-.in-trend-block-image{
+.in-trend-block-image {
     position: relative;
+    line-height: 0;
+}
 
+.in-trend-block-image > img {
+    width: 100%;
 }
 
 .in-trend-block-text {
@@ -275,8 +285,8 @@ section {
     padding: 16px 20px 16px 19px;
     background-color: #ffffff;
     text-transform: uppercase;
+    line-height: initial;
 }
-
 
 .in-trend-block-text-name {
     font-size: 18px;
@@ -296,7 +306,7 @@ section {
 
 .fetured-items {
     text-align: center;
-    height: 1000px;
+    /*height: 1000px;*/
 }
 
 .header-h3 {
@@ -312,23 +322,26 @@ section {
     font-size: 14px;
     letter-spacing: 0.35px;
     color: #9f9f9f;
+    margin-bottom: 20px;
 }
 
-.items-line {
+.items-arr {
     display: flex;
     justify-content: space-between;
-    margin-top: 39px;
+    flex-wrap: wrap;
+    /*margin-top: 25px;*/
 }
 
 .items {
     width: 263px;
     height: 364px;
     text-decoration: none;
+    margin-top: 35px;
 }
 
 .items img {
-    width: 261px;
-    height: 280px;
+    width: 100%;
+    /*height: 100%;*/
 }
 
 
@@ -337,6 +350,7 @@ section {
     font-weight: bold; 
     text-align: left;
     color: #222222;
+    text-transform: uppercase;
 }
 
 .items-price {
@@ -369,7 +383,35 @@ section {
     background-color: #222224;
 }
 
-.sale-left-block {
+.sale-img {
+    width: 767px;
+    height: 529px;
+    background-image: url(../img/Layer_38.png);
+
+}
+
+.sale-img-text-block {
+    font-weight: bold;
+    color: #ffffff;
+    margin: 146px 0px 0px 39px;
+}
+
+.sale-img-proc {
+    font-size: 53.5px;
+    letter-spacing: 1.34px;
+}
+
+.sale-img-proc > span {
+    font-size: 53.5px;
+    color: #f16d7f;
+}
+
+.sale-img-for {
+    font-size: 32px;
+    letter-spacing: 0.8px;
+}
+
+.sale-right-block {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -381,8 +423,10 @@ section {
     justify-content: space-around;
 }
 
+
+
 .sale-tagline-img {
-    margin-left: 40px;
+    margin-left: 10px;
 }
 
 .sale-tagline-text {
@@ -396,6 +440,7 @@ section {
     font-weight: bold;
     letter-spacing: 0.5px;
     color: #fbfbfb;
+    margin-bottom: 10px;
 }
 
 .sale-tagline-text-desc {
@@ -406,23 +451,26 @@ section {
 }
 
 .subscription {
-    height: 438px;
-    background: linear-gradient(45deg, rgba(211,211, 211, 0.5), rgba(211, 211, 211, 0.5)), 
-    url(../img/Layer_41.png) 50% 50% no-repeat;
+    min-height: 438px;
+    background-image: url(../img/Layer_41.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .subscription-content {
-    height: 438px;
+    min-height: 438px;
     display: flex;
-   
+    margin-top: 20px;
+    margin-bottom: 20px;
 } 
 
 .subscription-content-block {
     width:50%;
-    height: 438px;
+    min-height: 438px;
     display: flex;
     align-items: center;
-    /*outline: #f0f0f0 solid 1px;*/
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .subscription-avatar {
@@ -609,7 +657,7 @@ section {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    height: 215px; 
+    min-height: 215px; 
 }
 
 .footer-menu-link-header {
@@ -672,3 +720,7 @@ section {
     color: #b2b2b2;
 }
 
+.social-ico-link:hover {
+    background-color: #f16d7f;
+    color: #ffffff;
+} 

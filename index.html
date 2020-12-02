@@ -28,8 +28,8 @@
 
             <div class="login">
                 <a href="#!" class="basket button"><img src="img/basket.png" alt="img/basket.png"></a>
-                <a href="#!" class="account_button">My Account <i class="fa fa-caret-down" aria-hidden="true"></i></a>
-
+                <!--<a href="#!" class="account_button">My Account <i class="fa fa-caret-down" aria-hidden="true"></i></a>-->
+                <button class="account_button">My Account <i class="fa fa-caret-down" aria-hidden="true"></i></button>
             </div>
         </div>
     </header>
@@ -112,7 +112,7 @@
             <h2 class="header-h3">Fetured Items</h2>
             <p class="fetured-items-text">Shop for items based on what we featured in this week</p>
 
-            <div class="items-line">
+            <div class="items-arr">
                 <a href="#!" class="items shadow">
                     <img src="img/fetures_items_1.png" alt="fetures_items_1.png">
                     <p class="items-name">Mango People T-shirt</p>
@@ -133,8 +133,7 @@
                     <p class="items-name">Mango People T-shirt</p>
                     <p class="items-price">$52.00</p>
                 </a>
-            </div>
-            <div class="items-line">
+
                 <a href="#!" class="items shadow">
                     <img src="img/fetures_items_5.png" alt="fetures_items_5.png">
                     <p class="items-name">Mango People T-shirt</p>
@@ -173,10 +172,13 @@
         <div class="sale container">
 
             <div class="sale-img">
-                <img src="img/Layer_38.png" alt="Layer_38.png">
+                <div class="sale-img-text-block">
+                    <p class="sale-img-proc">30% <span>OFFER</span></p>
+                    <p class="sale-img-for">FOR WOMEN</p>
+                </div>
             </div>
 
-            <div class="sale-left-block">
+            <div class="sale-right-block">
                 <div class="sale-tagline">
                     <div class="sale-tagline-img">
                         <img src="img/truck.png" alt="truck.png">
@@ -289,35 +291,35 @@
             <div class="footer-menu-block">
                 <ul>
                     <li class="footer-menu-link">
-                        <a href="#!" class="footer-menu-link-header">COMPANY</a>
+                        <a href="#!" class="footer-menu-link-header menu-link">COMPANY</a>
                         <ul>
-                            <li><a href="#!" class="footer-menu-link-nested">Home</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">Shop</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">About</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">How It Works</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">Contact</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Home</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Shop</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">About</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">How It Works</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Contact</a></li>
                         </ul>
                     </li>
 
                     <li class="footer-menu-link">
-                        <a href="#!" class="footer-menu-link-header">INFORMATION</a>
+                        <a href="#!" class="footer-menu-link-header menu-link">INFORMATION</a>
                         <ul>
-                            <li><a href="#!" class="footer-menu-link-nested">Tearms & Condition</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">Privacy Policy</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">How to Buy</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">How to Sell</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">Promotion</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Tearms & Condition</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Privacy Policy</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">How to Buy</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">How to Sell</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Promotion</a></li>
                         </ul>
                     </li>
 
                     <li class="footer-menu-link">
-                        <a href="#!" class="footer-menu-link-header">SHOP CATEGORY</a>
+                        <a href="#!" class="footer-menu-link-header menu-link">SHOP CATEGORY</a>
                         <ul>
-                            <li><a href="#!" class="footer-menu-link-nested">Men</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">Women</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">Child</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">Apparel</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">Brows All</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Men</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Women</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Child</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Apparel</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Brows All</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -329,15 +331,15 @@
             <div class="footer-bottom-container container">
                 <p class="footer-bottom-copy-right">© 2017 Brand All Rights Reserved.</p>
                 <div class="footer-social">
-                    <a href="#!" class="social-ico-link social-ico button"><i class="fa fa-facebook"
+                    <a href="#!" class="social-ico-link social-ico"><i class="fa fa-facebook"
                             aria-hidden="true"></i></a>
-                    <a href="#!" class="social-ico-link social-ico button"><i class="fa fa-twitter-square"
+                    <a href="#!" class="social-ico-link social-ico"><i class="fa fa-twitter-square"
                             aria-hidden="true"></i></a>
-                    <a href="#!" class="social-ico-link social-ico button"><i class="fa fa-linkedin-square"
+                    <a href="#!" class="social-ico-link social-ico"><i class="fa fa-linkedin-square"
                             aria-hidden="true"></i></a>
-                    <a href="#!" class="social-ico-link social-ico button"><i class="fa fa-pinterest-p"
+                    <a href="#!" class="social-ico-link social-ico"><i class="fa fa-pinterest-p"
                             aria-hidden="true"></i></a>
-                    <a href="#!" class="social-ico-link social-ico button"><i class="fa fa-google-plus"
+                    <a href="#!" class="social-ico-link social-ico"><i class="fa fa-google-plus"
                             aria-hidden="true"></i></a>
                 </div>
             </div>
