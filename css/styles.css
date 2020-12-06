@@ -3,6 +3,11 @@
     src: url(../fonts/Lato/Lato.ttf); /* Путь к файлу со шрифтом */
 }
 
+@font-face {
+    font-family: OpenSans; /* Гарнитура шрифта */
+    src: url(../fonts/Open_Sans/OpenSans-Light.ttf); /* Путь к файлу со шрифтом */
+}
+
 
 * {
     margin: 0px;
@@ -33,7 +38,13 @@ body {
     box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
 }
 
+.button {
+    background-color: transparent;
+    cursor: pointer;
+}
+
 /* Кнопочки при наведении активации*/
+
 .button:hover {
     background-color: #eeeeee;
 }
@@ -187,11 +198,22 @@ body {
     color: #222222;
     text-transform: uppercase;
     text-decoration: none;
+    padding: 16px;
 }
+
+
+
+
+.main-menu-link-active {
+    border-bottom: 3px solid #ef5b70;
+}
+
 
 .main-menu-link:hover {
     color: #ccc;
+    border-bottom: 3px solid #ccc;
 }
+
 
 .promo {
     background-color: #e8e8e8;
@@ -254,7 +276,10 @@ section {
 
 .new-section {
     margin-top: 98px;
+}
 
+.section {
+    margin-top: 71px;
 }
 
 .in-trend {
@@ -326,10 +351,20 @@ section {
 }
 
 .items-arr {
-    display: flex;
+   /*display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
-    /*margin-top: 25px;*/
+    flex-wrap: wrap;*/
+    
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    grid-column-gap: 25px;
+    /*grid-row-gap: 20px;*/
+    justify-items: center; 
+  
+    /* Пример
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    grid-row-gap: 1em;*/
 }
 
 .items {
@@ -452,15 +487,18 @@ section {
 
 .subscription {
     min-height: 438px;
-    background-image: url(../img/Layer_41.png);
+   /* background-image: url(../img/Layer_41.png);
     background-repeat: no-repeat;
+    background-size: cover;*/
+    background: linear-gradient(45deg, rgba(211,211, 211, 0.5), rgba(211, 211, 211, 0.5)), 
+    url(../img/Layer_41.png) 50% 50% no-repeat;
     background-size: cover;
 }
 
 .subscription-content {
     min-height: 438px;
     display: flex;
-    margin-top: 20px;
+    /*margin-top: 20px;*/
     margin-bottom: 20px;
 } 
 
