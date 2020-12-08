@@ -7,7 +7,7 @@
     <title>Product</title>
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/style_pages.css">
+   <!--<link rel="stylesheet" href="css/style_pages.css">--> 
 </head>
 
 <body>
@@ -38,7 +38,7 @@
         <nav class="main-menu-nav">
             <ul class="main-menu">
                 <li><a href="#!" class="main-menu-link">Home</a></li>
-                <li><a href="#!" class="main-menu-link">Man</a></li>
+                <li><a href="#!" class="main-menu-link main-menu-link-active">Man</a></li>
                 <li><a href="#!" class="main-menu-link">Women</a></li>
                 <li><a href="#!" class="main-menu-link">Kids</a></li>
                 <li><a href="#!" class="main-menu-link">Accoseriese</a></li>
@@ -59,7 +59,7 @@
                         <li><a href="#!" class="breadcrumbs-link menu-link">Home</a></li>
                         <li><a href="#!" class="breadcrumbs-link menu-link">Men</a></li>
                         <li><a href="#!" class="breadcrumbs-link menu-link">New</a></li>
-                        <li><a href="#!" class="breadcrumbs-link menu-link">Arrivals</a></li>
+                        <li class="breadcrumbs-link menu-link">Arrivals</li>
                     </ul>
                 </div>
 
@@ -68,11 +68,11 @@
     </nav>
 
 
-    <section class="new-section">
+    <section class="section">
         <div class="product container">
             <aside class="aside">
-                <details open="open" class="aside-menu">
-                    <summary>Category</summary>
+                <details class="aside-menu" open>
+                    <summary class="aside-menu-title">Category</summary>
                     <ul>
                         <li><a href="#!" class="aside-menu-link menu-link">Accessories</a></li>
                         <li><a href="#!" class="aside-menu-link menu-link">Bags</a></li>
@@ -91,11 +91,41 @@
                 </details>
 
                 <details class="aside-menu">
-                    <summary>BRAND</summary>
+                    <summary class="aside-menu-title">BRAND</summary>
+                    <ul>
+                        <li><a href="#!" class="aside-menu-link menu-link">Accessories</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Bags</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Denim</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Hoodies & Sweatshirts</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Jackets & Coats</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Pants</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Polos</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Shirts</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Shoes</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Shorts</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Sweaters & Knits</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">T-Shirts</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Tanks</a></li>
+                    </ul>
                 </details>
 
                 <details class="aside-menu">
-                    <summary>dESIGNER</summary>
+                    <summary class="aside-menu-title">dESIGNER</summary>
+                    <ul>
+                        <li><a href="#!" class="aside-menu-link menu-link">Accessories</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Bags</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Denim</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Hoodies & Sweatshirts</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Jackets & Coats</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Pants</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Polos</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Shirts</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Shoes</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Shorts</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Sweaters & Knits</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">T-Shirts</a></li>
+                        <li><a href="#!" class="aside-menu-link menu-link">Tanks</a></li>
+                    </ul>
                 </details>
             </aside>
 
@@ -103,31 +133,50 @@
 
                 <ul>
                     <li class="selector">
-                        <p>Trending now</p>
-
-                        <a href="#!" class="trending-now-select">Bohemian</a>
-                        <a href="#!" class="trending-now-select">Floral</a>
-                        <a href="#!" class="trending-now-select">Lace</a>
-                        <a href="#!" class="trending-now-select">Floral</a>
-                        <a href="#!" class="trending-now-select">Lace</a>
-                        <a href="#!" class="trending-now-select">Bohemian</a>
-
+                        <p class="selector-header">Trending now</p>
+                        <div class="selector-trending">
+                            <div class="selector-trending-button">
+                                <div><button class="trending-now-select button">Bohemian</button></div>
+                                <div><button class="trending-now-select button">Floral</button></div>
+                                <div><button class="trending-now-select button">Lace</button></div>
+                            </div>
+                            <div class="selector-trending-button">
+                                <div><button class="trending-now-select button">Floral</button></div>
+                                <div><button class="trending-now-select button">Lace</button></div>
+                                <div><button class="trending-now-select button">Bohemian</button></div>
+                            </div>
+                        </div>
                     </li>
 
                     <li class="selector">
-                        <p>Size</p>
-                        <label for="XXS"><input id="XXS" type="checkbox"> XXS</label>
-                        <label for="XS"><input id="XS" type="checkbox"> XS</label>
-                        <label for="S"><input id="S" type="checkbox"> S</label>
-                        <label for="M"><input id="M" type="checkbox"> M</label>
-                        <label for="L"><input id="L" type="checkbox"> L</label>
-                        <label for="M"><input id="M" type="checkbox"> M</label>
-                        <label for="XL"><input id="XL" type="checkbox"> XL</label>
-                        <label for="XXL"><input id="XXL" type="checkbox"> XXL</label>
+                        <p class="selector-header">Size</p>
+                        <div class="selector-size">
+                            <label for="XXS"><input id="XXS" type="checkbox"> XXS</label>
+                            <label for="XS"><input id="XS" type="checkbox"> XS</label>
+                            <label for="S"><input id="S" type="checkbox"> S</label>
+                            <label for="M"><input id="M" type="checkbox"> M</label>
+                            <label for="L"><input id="L" type="checkbox"> L</label>
+                            <label for="XL"><input id="XL" type="checkbox"> XL</label>
+                            <label for="XXL"><input id="XXL" type="checkbox"> XXL</label>
+                        </div>
                     </li>
                     <li class="selector">
-                        <p>pRICE</p>
-                        <input type="range" class="selector-range" name="" id="" min="5" max="10">
+                        <p class="selector-header">pRICE</p>
+                        <div class="selector-price">
+                            <div class="range-filter">
+                                <div class="range-controls">
+                                    <div class="scale">
+                                        <div class="bar"></div>
+                                    </div>
+                                    <div class="toggle toggle-min" tabindex="0"></div>
+                                    <div class="toggle toggle-max" tabindex="0"></div>
+                                </div>
+                            </div>
+                            <p class="selector-price-numbers">$52</p>
+                            <p class="selector-price-numbers">$400</p>
+                        </div>
+
+
                     </li>
                 </ul>
 
@@ -205,18 +254,18 @@
 
                 <div class="product-navigation-bottom">
                     <div class="list-pages-block">
-                        <a href="#!" class="list-pages-links"><i class="fa fa-chevron-left" aria-hidden="true"></i></a>
-                        <a href="#!" class="list-pages-links">1</a>
-                        <a href="#!" class="list-pages-links">2</a>
-                        <a href="#!" class="list-pages-links">3</a>
-                        <a href="#!" class="list-pages-links">4</a>
-                        <a href="#!" class="list-pages-links">5</a>
-                        <a href="#!" class="list-pages-links">6.....20</a>
-                        <a href="#!" class="list-pages-links"><i class="fa fa-chevron-right" aria-hidden="true"></i></a>
+                        <button class="list-pages-links button"><i class="fa fa-chevron-left"
+                                aria-hidden="true"></i></button>
+                        <button class="list-pages-links list-pages-links-active button">1</button>
+                        <button class="list-pages-links button">2</button>
+                        <button class="list-pages-links button">3</button>
+                        <button class="list-pages-links button">4</button>
+                        <button class="list-pages-links button">5</button>
+                        <button class="list-pages-links button">6.....20</button>
+                        <button class="list-pages-links button"><i class="fa fa-chevron-right"
+                                aria-hidden="true"></i></button>
                     </div>
-
-                    <a href="#!" class="button-style-transporent button">View All</a>
-
+                    <button class="button-style-transporent button">View All</button>
                 </div>
 
             </div>
@@ -231,8 +280,6 @@
 
     <section class="new-section">
         <div class="sale">
-
-
             <div class="container dignity">
                 <div class="dignity-blocks">
                     <div>
@@ -264,7 +311,6 @@
                     </p>
                 </div>
             </div>
-
         </div>
 
         <div class="subscription">
@@ -339,33 +385,33 @@
                     <li class="footer-menu-link">
                         <a href="#!" class="footer-menu-link-header">COMPANY</a>
                         <ul>
-                            <li><a href="#!" class="footer-menu-link-nested">Home</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">Shop</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">About</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">How It Works</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">Contact</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Home</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Shop</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">About</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">How It Works</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Contact</a></li>
                         </ul>
                     </li>
 
                     <li class="footer-menu-link">
                         <a href="#!" class="footer-menu-link-header">INFORMATION</a>
                         <ul>
-                            <li><a href="#!" class="footer-menu-link-nested">Tearms & Condition</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">Privacy Policy</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">How to Buy</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">How to Sell</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">Promotion</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Tearms & Condition</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Privacy Policy</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">How to Buy</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">How to Sell</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Promotion</a></li>
                         </ul>
                     </li>
 
                     <li class="footer-menu-link">
                         <a href="#!" class="footer-menu-link-header">SHOP CATEGORY</a>
                         <ul>
-                            <li><a href="#!" class="footer-menu-link-nested">Men</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">Women</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">Child</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">Apparel</a></li>
-                            <li><a href="#!" class="footer-menu-link-nested">Brows All</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Men</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Women</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Child</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Apparel</a></li>
+                            <li><a href="#!" class="footer-menu-link-nested menu-link">Brows All</a></li>
                         </ul>
                     </li>
                 </ul>

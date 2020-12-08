@@ -4,9 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Main page</title>
+    <title>Single page</title>
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/style_pages.css">
 </head>
 
 <body>
@@ -48,175 +49,123 @@
         </nav>
     </div>
 
+    <nav class="">
+        <div class="breadcrumbs">
+            <div class="breadcrumbs-container container">
 
-    <section class="promo">
-        <div class="main-slider container">
-            <div class="main-slider-content">
-                <div class="main-slider-text">
-                    <p class="main-slider-text-header">THE BRAND</p>
-                    <p class="main-slider-text-line">OF LUXERIOUS <span>FASHION</span></p>
+                <div class="breadcrumbs-page-name">New Arrivals</div>
+                <div class="breadcrumbs-block">
+                    <ul class="breadcrumbs-ul">
+                        <li><a href="#!" class="breadcrumbs-link menu-link">Home</a></li>
+                        <li><a href="#!" class="breadcrumbs-link menu-link">Men</a></li>
+                        <li><a href="#!" class="breadcrumbs-link menu-link">New</a></li>
+                        <li class="breadcrumbs-link menu-link">Arrivals</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </nav>
+
+
+    <div class="slider-single-page">
+        <button class="slider-arrow-button button"><i class="fa fa-chevron-left" aria-hidden="true"></i></button>
+        <img src="img/Layer_42.png" alt="Layer_42.png">
+        <button class="slider-arrow-button button"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
+    </div>
+
+
+    <div class="product_description container">
+        <div class="product_description-container">
+
+            <h4 class="product_description-h4">WOMEN COLLECTION</h4>
+            <h2 class="product_description-h2">Moschino Cheap And Chic</h2>
+            <p class="product_description-text">
+                Compellingly actualize fully researched processes before proactive outsourcing. Progressively syndicate
+                collaborative architectures before cutting-edge services. Completely visualize parallel core
+                competencies
+                rather than exceptional portals.
+            </p>
+
+            <div class="product_description-mat-dis">MATERIAL: <span>COTTON</span></div>
+            <div class="product_description-mat-dis">DESIGNER: <span>BINBURHAN</span></div>
+
+            <p class="product_description-price">$561</p>
+
+            <div class="product_description-selector">
+                <div class="product_description-selector-select">
+                    <label for="color">CHOOSE COLOR</label>
+                    <select id="color">
+                        <option value="RED">RED</option>
+                        <option value="BLUE">BLUE</option>
+                        <option value="BLACK">BLACK</option>
+                    </select>
+                </div>
+
+                <div class="product_description-selector-select">
+                    <label for="size">CHOOSE SIZE</label>
+                    <select id="size">
+                        <option value="XXL">XXL</option>
+                        <option value="XS">XS</option>
+                        <option value="M">M</option>
+                        <option value="L">XXL</option>
+                        <option value="S">XS</option>
+                        <option value="XXS">M</option>
+                    </select>
+                </div>
+
+                <div class="product_description-selector-select">
+                    <label for="quantity">QUANTITY</label>
+                    <select id="quantity">
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <section class="new-section">
-        <div class="in-trend container">
-            <div class="in-trend-block">
-                <a href="#!" class="shadow">
-                    <div class="in-trend-block-image">
-                        <img src="img/Layer_30.png" alt="Layer_30.png">
-                        <div class="in-trend-block-text">
-                            <p class="in-trend-block-text-name">hOT dEAL</p>
-                            <p class="in-trend-block-text-for">FOR MEN</p>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="#!" class="shadow">
-                    <div class="in-trend-block-image">
-                        <img src="img/Layer_37.png" alt="Layer_37.png">
-                        <div class="in-trend-block-text">
-                            <p class="in-trend-block-text-name">LUXIROUS & trendy</p>
-                            <p class="in-trend-block-text-for">ACCESORIES</p>
-                        </div>
-                    </div>
-                </a>
+            <div class="add-to-cart-button-div">
+                <button class="add-to-cart button"><img src="img/basket.png" alt="basket.png"> Add to Cart</button>
             </div>
 
-            <div class="in-trend-block">
-                <a href="#!" class="shadow">
-                    <div class="in-trend-block-image">
-                        <img src="img/Layer_32.png" alt="Layer_32.png">
-                        <div class="in-trend-block-text">
-                            <p class="in-trend-block-text-name">30% offer</p>
-                            <p class="in-trend-block-text-for">women</p>
-                        </div>
-                    </div>
-                </a>
-                <a href="#!" class="shadow">
-                    <div class="in-trend-block-image">
-                        <img src="img/Layer_31.png" alt="Layer_31.png">
-                        <div class="in-trend-block-text">
-                            <p class="in-trend-block-text-name">new arrivals</p>
-                            <p class="in-trend-block-text-for">FOR kids</p>
-                        </div>
-                    </div>
-                </a>
-            </div>
         </div>
-    </section>
+
+    </div>
+
+
 
     <section class="new-section">
         <div class="container-items container">
-            <h2 class="header-h3">Fetured Items</h2>
-            <p class="fetured-items-text">Shop for items based on what we featured in this week</p>
-
+            <h3>you may like also</h3>
             <div class="items-arr">
                 <a href="#!" class="items shadow">
-                    <img src="img/fetures_items_1.png" alt="fetures_items_1.png">
-                    <p class="items-name">Mango People T-shirt</p>
+                    <img src="img/Layer_44.png" alt="Layer_44.png">
+                    <p class="items-name">BLAZE LEGGINGS</p>
                     <p class="items-price">$52.00</p>
                 </a>
                 <a href="#!" class="items shadow">
-                    <img src="img/fetures_items_2.png" alt="fetures_items_2.png">
-                    <p class="items-name">Mango People T-shirt</p>
+                    <img src="img/Layer_45.png" alt="Layer_45.png.png">
+                    <p class="items-name">ALEXA SWEATER</p>
                     <p class="items-price">$52.00</p>
                 </a>
                 <a href="#!" class="items shadow">
-                    <img src="img/fetures_items_3.png" alt="fetures_items_3.png">
-                    <p class="items-name">Mango People T-shirt</p>
+                    <img src="img/Layer_46.png" alt="Layer_46.png.png">
+                    <p class="items-name">AGNES TOP</p>
                     <p class="items-price">$52.00</p>
                 </a>
                 <a href="#!" class="items shadow">
-                    <img src="img/fetures_items_4.png" alt="fetures_items_4.png">
-                    <p class="items-name">Mango People T-shirt</p>
-                    <p class="items-price">$52.00</p>
-                </a>
-
-                <a href="#!" class="items shadow">
-                    <img src="img/fetures_items_5.png" alt="fetures_items_5.png">
-                    <p class="items-name">Mango People T-shirt</p>
-                    <p class="items-price">$52.00</p>
-                </a>
-                <a href="#!" class="items shadow">
-                    <img src="img/fetures_items_6.png" alt="fetures_items_6.png">
-                    <p class="items-name">Mango People T-shirt</p>
-                    <p class="items-price">$52.00</p>
-                </a>
-                <a href="#!" class="items shadow">
-                    <img src="img/fetures_items_7.png" alt="fetures_items_7.png">
-                    <p class="items-name">Mango People T-shirt</p>
-                    <p class="items-price">$52.00</p>
-                </a>
-                <a href="#!" class="items shadow">
-                    <img src="img/fetures_items_8.png" alt="fetures_items_8.png">
-                    <p class="items-name">Mango People T-shirt</p>
+                    <img src="img/Layer_47.png" alt="Layer_47.png">
+                    <p class="items-name">SYLVA SWEATER</p>
                     <p class="items-price">$52.00</p>
                 </a>
             </div>
 
-
-            <a href="#!" class="button-pink" style="margin-top: 60px;">Browse All Product <i
-                    class="fa fa-long-arrow-right" aria-hidden="true"></i>
-            </a>
-
-
-
-        </div>
 
     </section>
 
 
-    <section class="new-section">
-        <div class="sale container">
 
-            <div class="sale-img">
-                <div class="sale-img-text-block">
-                    <p class="sale-img-proc">30% <span>OFFER</span></p>
-                    <p class="sale-img-for">FOR WOMEN</p>
-                </div>
-            </div>
 
-            <div class="sale-right-block">
-                <div class="sale-tagline">
-                    <div class="sale-tagline-img">
-                        <img src="img/truck.png" alt="truck.png">
-                    </div>
-                    <div class="sale-tagline-text">
-                        <p class="sale-tagline-text-header">Free Delivery</p>
-                        <p class="sale-tagline-text-desc">Worldwide delivery on all. Authorit tively morph
-                            next-generation
-                            innov tion with extensive models.</p>
-                    </div>
-                </div>
-
-                <div class="sale-tagline">
-                    <div class="sale-tagline-img">
-                        <img src="img/proc.png" alt="proc.png">
-                    </div>
-                    <div class="sale-tagline-text">
-                        <p class="sale-tagline-text-header">Sales & discounts</p>
-                        <p class="sale-tagline-text-desc">Worldwide delivery on all. Authorit tively morph
-                            next-generation innov tion with extensive models.</p>
-                    </div>
-                </div>
-
-                <div class="sale-tagline">
-                    <div class="sale-tagline-img">
-                        <img src="img/crown.png" alt="crown.png">
-                    </div>
-                    <div class="sale-tagline-text">
-                        <p class="sale-tagline-text-header">Quality assurance</p>
-                        <p class="sale-tagline-text-desc">Worldwide delivery on all. Authorit tively morph
-                            next-generation
-                            innov tion with extensive models.</p>
-                    </div>
-                </div>
-            </div>
-
-        </div>
-    </section>
 
 
 
@@ -346,7 +295,6 @@
         </section>
 
     </footer>
-
 
 
 </body>
