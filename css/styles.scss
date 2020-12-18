@@ -34,6 +34,19 @@ h3 {
     margin-bottom: 30px;
 }
 
+h4 {
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #222222;
+}
+
+
+h5 {
+    font-size: 13px;
+    text-transform: uppercase;
+    color: #222222;
+}
 
 
 
@@ -52,6 +65,7 @@ h3 {
 
 .shadow:hover {
     box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    transition: 0.5s;
 }
 
 .button {
@@ -63,11 +77,16 @@ h3 {
 
 .button:hover {
     background-color: #eeeeee;
+    transition: 0.5s;
 }
 
 .button:active {
     background-color: $magenta_color;
 } 
+
+.menu-link {
+    transition: 0.5s;
+}
 
 .menu-link:hover {
     color: #ccc;
@@ -81,6 +100,7 @@ h3 {
 @import "blocks/_single-page.scss";
 @import "blocks/_product.scss";
 @import "blocks/_shopping-cart.scss";
+@import "blocks/_checkout.scss";
 
 /*******/
 
@@ -132,6 +152,10 @@ h3 {
     display: flex;
 }
 
+.browse_button-block {
+    position: relative;
+}
+
 .browse_button {
     padding: 11px 9px 12px 15px;
     border: solid 1px #e6e6e6;
@@ -143,6 +167,68 @@ h3 {
     text-decoration: none;
     border-bottom-left-radius: 5px;
     border-top-left-radius: 5px;
+
+}
+
+.menu-drop-down {
+    width: 262px;
+    height: 530px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    list-style: none;
+    position: absolute;
+    z-index: 100;
+    opacity: 0;
+
+    transition: 0.5s;
+    transform: scale(0, 0);
+    transform-origin: left top;
+}
+
+.browse_button-block:hover .menu-drop-down {
+    
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+
+.menu-drop-down > li { 
+    margin-left: 15px;
+    margin-top: 15px;
+}
+
+
+.menu-drop-down-header {
+    font-family: Lato;
+    font-size: 14px;
+    letter-spacing: 0.35px;
+    font-weight: 700;
+    color: #232323;
+    text-transform: uppercase;
+    padding-bottom: 7px;
+    margin-bottom: 7px;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+
+
+.menu-drop-down-sub {
+    list-style: none; 
+    margin-left: 5px;
+}
+
+.menu-drop-down-sub > li {
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.menu-drop-down-link {
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.35px;
+    color: #4f4f4f;
+    text-decoration: none;
 }
 
 
@@ -171,11 +257,123 @@ h3 {
 }
 
 
+.cart-button-block {
+    position: relative;
+}
+
 
 .basket img {
     width: 32px;
     height: 29px;
 }
+
+.cart-button-block:hover .cart-button-menu-block {
+    opacity: 1;
+    transform: scale(1, 1);
+}
+
+.cart-button-menu-block {
+    width: 262px;
+    height: 440px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    position: absolute;
+    left: -10px;
+    z-index: 100;
+    
+    opacity: 0;
+    transform: scale(0, 0);
+    transform-origin: left top;
+    transition: 0.5s;
+
+}
+
+.cart-button-menu {
+    padding: 0px 20px 0px 20px;
+}
+
+.cart-button-menu-li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px 15px 0px;
+    border-bottom:  1px solid #ededed;
+}
+
+.cart-button-menu-block-text > p {
+    margin-bottom: 10px;
+    margin-top: 10px;
+} 
+
+.cart-button-menu-block-header {
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    color: #222222;
+}
+
+.stars {
+    font-family: FontAwesome;
+    font-size: 12px;
+    color: #e4af48;
+}
+
+.cart-button-menu-block-price {
+    font-size: 12px;
+    color: #f16d7f;
+}
+
+
+.cart-button-menu-button-cancel {
+    background-color: transparent;
+    border: none;
+    font-family: FontAwesome;
+    font-size: 16px;
+    color: #c0c0c0;
+    cursor: pointer;
+}
+
+
+.cart-button-menu-price {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0px;
+}
+
+.cart-button-menu-price > p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #222222;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.cart-button-menu-checkout {
+    width: 225px;
+    height: 50px;
+    border: solid 1px #f16d7f;
+    margin-top: 10px;
+    padding: 15px 73px 15px 72px;
+  
+    text-transform: uppercase;
+    background-color: transparent;
+    font-family: Lato;
+    font-size: 14px;
+    font-weight: 700;
+    font-weight: bold;
+    color: #f16d7f;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+.go-to-cart {
+    color: #4a4a4a;
+    padding: 15px 69px 15px 69px;
+}
+
+
 
 
 .account_button {
@@ -219,6 +417,8 @@ h3 {
     text-transform: uppercase;
     text-decoration: none;
     padding: 16px;
+    transition: 0.15s;
+    
 }
 
 
@@ -232,6 +432,7 @@ h3 {
 .main-menu-link:hover {
     color: #ccc;
     border-bottom: 3px solid #ccc;
+    
 }
 
 
@@ -392,12 +593,67 @@ section {
     height: 364px;
     text-decoration: none;
     margin-top: 35px;
+    position: relative;
+
 }
 
-.items img {
+.items > img {
     width: 100%;
-    /*height: 100%;*/
 }
+
+
+.items-overlay {
+    position: absolute;
+    top: 0;
+    left:0;
+    right:0;
+    bottom: 82px;
+    background-color: rgba(58, 56, 56, 0.83);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    
+}
+
+.items-button-cart {
+    width: 123px;
+    height: 39px;
+    padding: 10px 13px 7px 12px;
+    border: solid 1px #ffffff;
+    background-color: transparent;
+    
+    font-family: Lato;
+    font-size: 13px;
+    font-weight: bold;
+    color: #ffffff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+
+.items-button-cart-img {
+    width: 23px;
+    height: 22px;
+    margin-right: 8px;
+}
+
+
+.items:hover .items-overlay {
+
+    transition: 0.5s;
+    opacity: 1;
+
+}
+
+
+
+
+
 
 
 .items-name {
@@ -426,10 +682,14 @@ section {
     padding: 15px 19px 15px 24px;
     background-color: $magenta_color;
     display: inline-block;
+    margin-top: 60px;
+    transition: 0.5s;
+
 }
 
 .button-pink:hover {
     background-color: #656d7f;   
+    
 }
 
 
@@ -596,11 +856,6 @@ section {
     background-color: #d6d6d6;
 }
 
-/*
-.subscription-slider-link:hover {
-    background-color: $magenta_color;
-}
-*/
 
 .subscription-slider-link-active {
     background-color: $magenta_color;
@@ -666,11 +921,13 @@ section {
     cursor: pointer;
     border: none;
     outline: none;
+    transition: 0.5s;
 }
 
 
 .subscription_button:hover {
     background-color: #656d7f;   
+    
 }
 
 
@@ -763,7 +1020,6 @@ section {
 }
 
 .footer-social {
-
     display: flex;
 }
 
@@ -775,12 +1031,14 @@ section {
     height: 32px;
     margin: 0 8px 0 0px;
     background-color: #ffffff;
+    
 }
 
 .social-ico-link {
     text-decoration: none;
     font-size: 16px;
     color: #b2b2b2;
+    transition: 0.5s;
 }
 
 .social-ico-link:hover {

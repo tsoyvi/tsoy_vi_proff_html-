@@ -4,14 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Shopping Cart</title>
+    <title>Checkout</title>
     <link rel="stylesheet" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.css">
+
 </head>
 
 <body>
-
-
     <header class="header">
         <div class="container header-container">
             <div class="header-logo">
@@ -138,7 +137,7 @@
         <nav class="main-menu-nav">
             <ul class="main-menu">
                 <li><a href="index.html" class="main-menu-link">Home</a></li>
-                <li><a href="product.html" class="main-menu-link">Man</a></li>
+                <li><a href="product.html" class="main-menu-link main-menu-link-active">Man</a></li>
                 <li><a href="single-page.html" class="main-menu-link">Women</a></li>
                 <li><a href="#!" class="main-menu-link">Kids</a></li>
                 <li><a href="#!" class="main-menu-link">Accoseriese</a></li>
@@ -157,8 +156,7 @@
                     <ul class="breadcrumbs-ul">
                         <li><a href="#!" class="breadcrumbs-link menu-link">Home</a></li>
                         <li><a href="#!" class="breadcrumbs-link menu-link">Men</a></li>
-                        <li><a href="#!" class="breadcrumbs-link menu-link">New</a></li>
-                        <li class="breadcrumbs-link menu-link">Arrivals</li>
+                        <li class="breadcrumbs-link menu-link">NewArrivals</li>
                     </ul>
                 </div>
 
@@ -167,124 +165,143 @@
     </nav>
 
 
+    <section class="section">
 
-    <section class="">
-        <form action="#" method="post">
-            <div class="cart-table-block container">
-                <table class="cart-table">
-                    <tr>
-                        <td>Product Details</td>
-                        <td>Product Details</td>
-                        <td>unite Price</td>
-                        <td>Quantity</td>
-                        <td>shipping</td>
-                        <td>Subtotal</td>
-                        <td>ACTION</td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/Image_placeholder_1.png" alt="Image_placeholder_1.png"></td>
-                        <td>
-                            <p class="cart-table-product-name">Mango People T-shirt</p>
-                            <p class="cart-table-product-description">Color: <span>Red</span></p>
-                            <p class="cart-table-product-description">Size: <span>Xll</span></p>
-                        </td>
+        <div class="container">
 
-                        <td>$150</td>
-                        <td><input type="text" name="num0" id="num0" value="2" class="cart-table-product-count"></td>
-                        <td>FREE</td>
-                        <td>$300</td>
-                        <td>
-                            <button><i class="fa fa-times-circle" aria-hidden="true"></i></button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td><img src="img/Image_placeholder_2.png" alt="Image_placeholder_2.png"></td>
-                        <td>
-                            <p class="cart-table-product-name">Mango People T-shirt</p>
-                            <p class="cart-table-product-description">Color: <span>Red</span></p>
-                            <p class="cart-table-product-description">Size: <span>Xll</span></p>
-                        </td>
-                        <td>$150</td>
-                        <td><input type="text" name="num1" id="num1" value="2" class="cart-table-product-count"></td>
-                        <td>FREE</td>
-                        <td>$300</td>
-                        <td>
-                            <button><i class="fa fa-times-circle" aria-hidden="true"></i></button>
-                        </td>
+            <details class="checkout-details" open>
+                <summary class="checkout-details-summary">01. Shipping Adress</summary>
 
-                    </tr>
-                    <tr>
-                        <td><img src="img/Image_placeholder_8.png" alt="Image_placeholder_8.png"></td>
-                        <td>
-                            <p class="cart-table-product-name">Mango People T-shirt</p>
-                            <p class="cart-table-product-description">Color: <span>Red</span></p>
-                            <p class="cart-table-product-description">Size: <span>Xll</span></p>
-                        </td>
-                        <td>$150</td>
-                        <td><input type="text" name="num2" id="num2" value="2" class="cart-table-product-count"></td>
-                        <td>FREE</td>
-                        <td>$300</td>
-                        <td>
-                            <button><i class="fa fa-times-circle" aria-hidden="true"></i></button>
-                        </td>
-                    </tr>
+                <div class="checkout-blocks">
 
-                </table>
+                    <div class="checkout-blocks-sub">
+                        <h5>Check as a guest or register</h5>
+                        <p class="checkout-blocks-sub-p">Register with us for future convenience</p>
 
-                <div class="table-buttons">
-                    <button>cLEAR SHOPPING CART</button>
-                    <button>cONTINUE sHOPPING</button>
+                        <div class="checkout-blocks-margin">
+                            <label class="checkout-blocks-label">
+                                <input type="radio" name="reg-check" id="reg-check" class="checkout-radio">checkout as
+                                guest</label><br>
+                            <label class="checkout-blocks-label">
+                                <input type="radio" name="reg-check" id="reg-check" class="checkout-radio"
+                                    checked>register
+                            </label>
+                        </div>
+
+                        <h5>register and save time!</h5>
+                        <p class="checkout-blocks-sub-p">Register with us for future convenience</p>
+
+                        <div class="checkout-blocks-margin">
+                            <p class="checkout-blocks-sub-p"><i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                Fast and easy checkout</p>
+                            <p class="checkout-blocks-sub-p"><i class="fa fa-angle-double-right" aria-hidden="true"></i>
+                                Easy access to your order
+                                history and status</p>
+                        </div>
+                        <div>
+                            <button class="checkout-blocks-button">Continue</button>
+                        </div>
+                    </div>
+
+
+                    <div class="checkout-blocks-sub">
+                        <form action="#!" method="post">
+
+                            <h5>Already registed?</h5>
+                            <p class="checkout-blocks-sub-p">Please log in below</p>
+
+                            <div class="checkout-blocks-input-block">
+                                <label for="checkout-email" class="checkout-blocks-label">EMAIL ADDRESS <span>*</span></label>
+                                <input type="email" id="checkout-email" class="checkout-blocks-inputs" required>
+                            </div>
+
+                            <div class="checkout-blocks-input-block">
+                                <label for="checkout-pass" class="checkout-blocks-label">PASSWORD <span>*</span></label>
+                                <input type="password" id="checkout-password" class="checkout-blocks-inputs" required>
+                            </div>
+                            <p class="required-fileds">* Required Fileds</p>
+
+                            <div class="required-fileds-buttons">
+                                <button class="checkout-blocks-button button-log-in">Log in</button>
+                                <a href="#!" class="checkout-blocks-sub-link">Forgot Password ?</a>
+                            </div>
+
+                        </form>
+
+                    </div>
+
                 </div>
 
-                <div class="table-forms-block">
+            </details>
 
-                    <div class="table-forms-address">
-                        <p class="table-forms-block-header">Shipping Adress</p>
-                        <select name="country" id="country" class="table-forms-input">
-                            <option value="Bangladesh">Bangladesh</option>
-                            <option value="Russia">Russia</option>
-                            <option value="USA">USA</option>
-                        </select>
 
-                        <input type="text" name="State" id="State" placeholder="State" class="table-forms-input">
-                        <input type="text" name="Postcode" id="Postcode" placeholder="Postcode / Zip"
-                            class="table-forms-input">
-                        <div>
-                            <button class="table-forms-button">get a quote</button>
-                        </div>
-                    </div>
-
-                    <div class="table-forms-address">
-                        <p class="table-forms-block-header">coupon discount</p>
-                        <p class="table-forms-block-text">Enter your coupon code if you have one</p>
-                        <input type="text" name="discount" id="discount" placeholder="State" class="table-forms-input">
-                        <div>
-                            <button class="table-forms-button">Apply coupon</button>
-                        </div>
-                    </div>
-
-                    <div class="table-forms-proceed-checkout-block">
-                        <div class="table-forms-proceed-checkout-block-sub">
-                            <p class="sub-total">Sub total <span>$900</span> </p>
-                            <p class="grand-total">GRAND TOTAL <span>$900</span></p>
-                            <button class="proceed-checkout-button">proceed to checkout</button>
-                        </div>
+            <details class="checkout-details">
+                <summary class="checkout-details-summary">02. BILLING INFORMATION</summary>
+                <div class="checkout-blocks">
+                    <div class="checkout-blocks-sub">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quam eaque ab illo id
+                        officia, voluptates beatae reiciendis voluptas praesentium sequi, magni perferendis quas
+                        accusamus. Incidunt ut nihil neque. Reprehenderit?
                     </div>
                 </div>
 
+            </details>
 
-            </div>
+            <details class="checkout-details">
+                <summary class="checkout-details-summary">03. SHIPPING INFORMATION</summary>
+                <div class="checkout-blocks">
+                    <div class="checkout-blocks-sub">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quam eaque ab illo id
+                        officia, voluptates beatae reiciendis voluptas praesentium sequi, magni perferendis quas
+                        accusamus. Incidunt ut nihil neque. Reprehenderit?
+                    </div>
+                </div>
+            </details>
+
+            <details class="checkout-details">
+                <summary class="checkout-details-summary">04. SHIPPING METHOD</summary>
+                <div class="checkout-blocks">
+                    <div class="checkout-blocks-sub">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quam eaque ab illo id
+                        officia, voluptates beatae reiciendis voluptas praesentium sequi, magni perferendis quas
+                        accusamus. Incidunt ut nihil neque. Reprehenderit?
+                    </div>
+                </div>
+            </details>
+
+            <details class="checkout-details">
+                <summary class="checkout-details-summary">05. PAYMENT METHOD</summary>
+                <div class="checkout-blocks">
+                    <div class="checkout-blocks-sub">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quam eaque ab illo id
+                        officia, voluptates beatae reiciendis voluptas praesentium sequi, magni perferendis quas
+                        accusamus. Incidunt ut nihil neque. Reprehenderit?
+                    </div>
+                </div>
+            </details>
+
+            <details class="checkout-details">
+                <summary class="checkout-details-summary">06. ORDER REVIEW</summary>
+                <div class="checkout-blocks">
+                    <div class="checkout-blocks-sub">
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate quam eaque ab illo id
+                        officia, voluptates beatae reiciendis voluptas praesentium sequi, magni perferendis quas
+                        accusamus. Incidunt ut nihil neque. Reprehenderit?
+                    </div>
+                </div>
+            </details>
+
+        </div>
 
 
-        </form>
+
+        <div class="container">
+
+        </div>
 
 
-
-        
 
     </section>
-
-
 
 
     <section class="new-section">
@@ -415,6 +432,8 @@
         </section>
 
     </footer>
+
+
 
 
 </body>
