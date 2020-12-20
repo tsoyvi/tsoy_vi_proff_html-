@@ -11,8 +11,6 @@
 </head>
 
 <body>
-
-
     <header class="header">
         <div class="container header-container">
             <div class="header-logo">
@@ -69,9 +67,12 @@
 
             <div class="login">
 
+                <a href="shopping-cart.html" class="basket button"><img src="img/basket.png" alt="img/basket.png"></a>
+
                 <div class="cart-button-block">
-                    <a href="shopping-cart.html" class="basket button"><img src="img/basket.png"
-                            alt="img/basket.png"></a>
+                    <button class="account_button">
+                        My Account <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </button>
 
                     <div class="cart-button-menu-block">
                         <ul class="cart-button-menu">
@@ -89,8 +90,9 @@
                                     <p class="cart-button-menu-block-price">1 x $250</p>
                                 </div>
                                 <div>
-                                    <button class="cart-button-menu-button-cancel"><i class="fa fa-times-circle"
-                                            aria-hidden="true"></i></button>
+                                    <button class="cart-button-menu-button-cancel">
+                                        <i class="fa fa-times-circle" aria-hidden="true"></i>
+                                    </button>
                                 </div>
                             </li>
 
@@ -124,30 +126,164 @@
                                 <a href="checkout.html" class="cart-button-menu-checkout button">Checkout</a>
                             </div>
                             <div>
-                                <a href="shopping-cart.html" class="cart-button-menu-checkout go-to-cart button">Go to cart</a>
+                                <a href="shopping-cart.html" class="cart-button-menu-checkout go-to-cart button">Go to
+                                    cart</a>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <button class="account_button">My Account <i class="fa fa-caret-down" aria-hidden="true"></i></button>
+                </div>
             </div>
         </div>
     </header>
 
-    <div class="container">
-        <nav class="main-menu-nav">
-            <ul class="main-menu">
-                <li><a href="index.html" class="main-menu-link">Home</a></li>
-                <li><a href="product.html" class="main-menu-link">Man</a></li>
-                <li><a href="single-page.html" class="main-menu-link main-menu-link-active">Women</a></li>
-                <li><a href="#!" class="main-menu-link">Kids</a></li>
-                <li><a href="#!" class="main-menu-link">Accoseriese</a></li>
-                <li><a href="#!" class="main-menu-link">Featured</a></li>
-                <li><a href="#!" class="main-menu-link">Hot Deals</a></li>
-            </ul>
-        </nav>
-    </div>
+    <nav class="main-menu-nav container">
+        <ul class="main-menu">
+            <li><a href="index.html" class="main-menu-link main-menu-link-active">Home</a></li>
+            <li><a href="product.html" class="main-menu-link">Man</a>
+                <div class="mega-menu" id="mega-menu">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa consequatur quam, necessitatibus
+                    reiciendis harum aliquid quis inventore ullam cumque nobis sapiente facilis, eum optio, et delectus
+                    quos explicabo ipsum suscipit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+                    consequatur quam, necessitatibus
+                    reiciendis harum aliquid quis inventore ullam cumque nobis sapiente facilis, eum optio, et delectus
+                    quos explicabo ipsum suscipit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+                    consequatur quam, necessitatibus
+                    reiciendis harum aliquid quis inventore ullam cumque nobis sapiente facilis, eum optio, et delectus
+                    quos explicabo ipsum suscipit?
+                </div>
+
+            </li>
+
+            <li>
+                <a href="single-page.html" class="main-menu-link">Women</a>
+                <div class="mega-menu" id="mega-menu">
+                    <div class="mega-menu-blocks">
+                        <ul class="mega-menu-list">
+                            <li>
+                                <p class="menu-drop-down-header">Women</p>
+                                <ul class="mega-menu-list-sub">
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Dresses</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Tops</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-linkk">Sweaters/Knits</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Jackets/Coats</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Blazers</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Denim</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Leggings/Pants</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Skirts/Shorts</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Accessories</a></li>
+                                    <!--  <li><a href="#!" class="mega-menu-list-sub-link menu-link">Bags/Purses</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Swimwear/Underwear</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Nightwear</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Shoes</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Beauty</a></li>-->
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <!-- 2 колонка -->
+                    <div class="mega-menu-blocks">
+                        <ul class="mega-menu-list">
+                            <li>
+                                <p class="menu-drop-down-header">Women</p>
+                                <ul class="mega-menu-list-sub">
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Dresses</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Tops</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-linkk">Sweaters/Knits</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Jackets/Coats</a></li>
+                                </ul>
+                            </li>
+
+                        </ul>
+                        <ul class="mega-menu-list">
+                            <li>
+                                <p class="menu-drop-down-header">Women</p>
+                                <ul class="mega-menu-list-sub">
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Dresses</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Tops</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-linkk">Sweaters/Knits</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <!-- 3 колонка -->
+                    </div>
+                    <div class="mega-menu-blocks">
+                        <ul class="mega-menu-list">
+                            <li>
+                                <p class="menu-drop-down-header">Women</p>
+                                <ul class="mega-menu-list-sub">
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Dresses</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Tops</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-linkk">Sweaters/Knits</a></li>
+                                    <li><a href="#!" class="mega-menu-list-sub-link menu-link">Jackets/Coats</a></li>
+
+                                </ul>
+                            </li>
+                        </ul>
+                        <div class="mega-menu-blocks-img">
+                            <img src="img/rectangle_23.png" alt="rectangle_23.png">
+                            <p class="mega-menu-blocks-img-text">
+                                Super<br>
+                                sale!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </li>
+
+            <li>
+                <a href="#!" class="main-menu-link">Kids</a>
+                <div class="mega-menu" id="mega-menu">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa consequatur quam, necessitatibus
+                    reiciendis harum aliquid quis inventore ullam cumque nobis sapiente facilis, eum optio, et delectus
+                    quos explicabo ipsum suscipit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+                    consequatur quam, necessitatibus
+                    reiciendis harum aliquid quis inventore ullam cumque nobis sapiente facilis, eum optio, et delectus
+                    quos explicabo ipsum suscipit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+                    consequatur quam, necessitatibus
+                    reiciendis harum aliquid quis inventore ullam cumque nobis sapiente facilis, eum optio, et delectus
+                    quos explicabo ipsum suscipit?
+                </div>
+            </li>
+            <li>
+                <a href="#!" class="main-menu-link">Accoseriese</a>
+                <div class="mega-menu" id="mega-menu">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa consequatur quam, necessitatibus
+                    reiciendis harum aliquid quis inventore ullam cumque nobis sapiente facilis, eum optio, et delectus
+                    quos explicabo ipsum suscipit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+                    consequatur quam, necessitatibus
+                    reiciendis harum aliquid quis inventore ullam cumque nobis sapiente facilis, eum optio, et delectus
+                    quos explicabo ipsum suscipit?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae fugiat
+                    nam doloribus facilis deleniti expedita laudantium omnis, perspiciatis perferendis delectus maiores
+                    odit animi ab fuga voluptate earum, saepe odio ipsam.
+                </div>
+            </li>
+            <li>
+                <a href="#!" class="main-menu-link">Featured</a>
+                <div class="mega-menu" id="mega-menu">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa consequatur quam, necessitatibus
+                    reiciendis harum aliquid quis inventore ullam cumque nobis sapiente facilis, eum optio, et delectus
+                    quos explicabo ipsum suscipit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+                    consequatur quam, necessitatibus
+                    reiciendis harum aliquid quis inventore ullam cumque nobis sapiente facilis, eum optio, et delectus
+                    quos explicabo ipsum suscipit?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa
+                    consequatur quam, necessitatibus
+                    reiciendis harum aliquid quis inventore ullam cumque nobis sapiente facilis, eum optio, et delectus
+                    quos explicabo ipsum suscipit?
+                </div>
+            </li>
+            <li>
+                <a href="#!" class="main-menu-link">Hot Deals</a>
+                <div class="mega-menu" id="mega-menu">
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                    Doloremque quod facere libero, voluptates dolorum provident laudantium vero alias iusto tempora
+                    ipsa assumenda dolorem aperiam cum, eum aliquam distinctio modi adipisci.
+
+                </div>
+            </li>
+        </ul>
+    </nav>
 
     <nav class="">
         <div class="breadcrumbs">
