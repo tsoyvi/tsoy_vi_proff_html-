@@ -1,0 +1,116 @@
+
+$page-width-laptop: 1440px;
+
+
+
+
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+body {
+  margin: 0px;
+  font-family: 'Myriad Pro', Arial, sans-serif;
+}
+
+
+
+
+
+h1 {
+  font-family: Myriad Pro;
+  font-size: 48px;
+  /*line-height: 58px;*/
+  color: #FFFFFF;
+}
+
+h2 {
+  font-family: Myriad Pro;
+  font-size: 36px;
+  /*line-height: 43px;*/
+  color: #FFFFFF;
+}
+
+.container {
+  width: $page-width-laptop;
+  margin: 0 auto;
+}
+
+.container-140 {
+  width: 1160px;
+  margin: 0 auto;
+}
+
+
+.header {
+  height: 525px;
+  background-image: url(../img/bg13.png);
+  background-size: cover;
+}
+
+.header-content {
+
+ 
+}
+
+.header-content-upper-line {
+  padding-top: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-img {
+  width: 160px;
+  height: 46px;
+}
+
+.main-menu {
+  list-style: none;
+}
+
+.main-menu > li {
+  display: inline-block;
+}
+
+.main-menu-link {
+  font-family: Myriad Pro;
+  font-size: 18px;
+  line-height: 22px;
+  color: #FFFFFF;
+  text-decoration: none;
+  margin-left: 60px;
+}
+
+
+.slogan {
+  margin-top: 80px;
+}
+
+.slogan > h2 {
+  margin-top: 15px;
+}
+
+.header-content-button-block {
+  margin-top: 30px;
+}
+
+
+.button-1-block {
+  margin-top: 52px;
+
+}
+
+.button-1 {
+  background: #008DCD;
+  border-radius: 30px;
+  padding: 15px 110px 15px 110px;
+  font-family: Myriad Pro;
+  font-size: 16px;
+  line-height: 3;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #FFFFFF;
+}
