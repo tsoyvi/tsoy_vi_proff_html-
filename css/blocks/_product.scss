@@ -246,11 +246,10 @@
 
 
 .sort-block-nested-label {
-    
     margin: 0px; 
     padding: 5px 9px 6px 13px;
-    outline:  #ebebeb solid 1px;
-   
+    /*outline:  #ebebeb solid 1px;*/
+    border: 1px solid #ebebeb;
     background-color: #ffffff;
     font-size: 14px;
     color: #6f6e6e;
@@ -258,15 +257,14 @@
 }
 
 .sort-block-sort-by {
-    /*width: 86px;*/
-    height: 30px;
-    margin: 0 10px 0 0;
-    outline:  #ebebeb solid 1px;
-    border: none;
-    background-color: #ffffff;
     font-size: 14px;
     color: #6f6e6e;
-    padding: 0px 0px 0px 5px;
+    font-family: 'Lato', Arial, sans-serif;
+    height: 30px;
+    margin: 0px 10px 0px -1px;
+    border: 1px solid #ebebeb;
+    background-color: #ffffff;
+    padding: 0px 30px 0px 10px;
 }
 
 

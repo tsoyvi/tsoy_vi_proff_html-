@@ -49,7 +49,7 @@
 
 
 .main-menu > li:hover .mega-menu {
-    transition: 0.3s linear 0.1s;
+    transition: 0.2s linear 0.1s;
     opacity: 1;
     /*transform: scale(1, 1);*/
     z-index: 99;
@@ -68,7 +68,7 @@
     background-color: #ffffff;
     z-index: -1;
     opacity: 0;
-    transition: 0.3s linear 0.1s;
+   /* transition: 0.1s linear 0.1s;*/
 }
 
 .mega-menu-blocks {
@@ -114,15 +114,12 @@
     list-style: none; 
 }
 
-.mega-menu-list-sub > li {
-    margin-top: 8px;
-    margin-bottom: 8px;
-}
 
 .mega-menu-list-sub-link {
     font-family: Lato;
     font-size: 14px;
-    font-weight: 500;
+    font-weight: 600;
+    line-height: 2;
     letter-spacing: 0.35px;
     color: #4f4f4f;
     text-decoration: none;

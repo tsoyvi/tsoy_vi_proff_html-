@@ -103,7 +103,14 @@
     font-family: Lato;
     font-size: 13px;
     color: #656565;
+     -moz-appearance: textfield;
+
 }
+
+.cart-table-product-count::-webkit-inner-spin-button { 
+    display: none;
+}
+
 
 
 .table-buttons {
@@ -155,6 +162,9 @@
     color: #000000;
     margin-bottom: 20px;
 }
+
+
+
 
 .table-forms-input {
     width: 355px;
